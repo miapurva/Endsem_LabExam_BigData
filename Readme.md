@@ -1,5 +1,5 @@
-Black Friday Dataset
 
+<<<<<<< HEAD
 1. [x]  Generate desriptive statistics to better understand the dataset using python support.
 
 2. [x] Handle missing values using any threee techniques.
@@ -11,3 +11,5 @@ Black Friday Dataset
 5. [x] Mine intersting patterns about each product id maintained by the organization.
 
 6. [ ] Develop a parallelized application using Map Reduce framework to check if a input matrix is symmetric 		or not( transpose of the matrix is equal to itself).
+=======
+>>>>>>> 5dd30445f08c33c09856b3fe0ea095e200d4267e
