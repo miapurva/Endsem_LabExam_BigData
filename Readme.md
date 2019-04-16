@@ -1,6 +1,6 @@
 Black Friday Dataset
 
-1. Generate desriptive statistics to better understand the dataset using python support.
+[x] 1. Generate desriptive statistics to better understand the dataset using python support.
 
 2. Handle missing values using any threee techniques.
 
