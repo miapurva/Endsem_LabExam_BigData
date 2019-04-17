@@ -17,16 +17,12 @@ for i in range(199):
     records.append([str(store_data.values[i,j]) for j in range(8)])
 
 
-association_rules = apriori(records, min_support=0.05, min_lift=3, min_length=2)  
+association_rules = apriori(records, min_support=0.029, min_lift=2, min_length=3)  
 association_results = list(association_rules) 
-#print(len(list(association_rules))) 
-#print "Apurva"
-#print(association_results[0])  
+
 
 for item in association_results:
-    # first index of the inner list
-    # Contains base item and add item
-    #print "Yutika"
+
     pair = item[0] 
     items = [x for x in pair]
     confidence =  item[2][0][2]
@@ -37,13 +33,10 @@ for item in association_results:
     support_AC = item[1]
     support_A = support_AC / confidence
     support_C = confidence / lift
-    
     leverage = support_AC - support_A*support_C
-    #conviction = (1 - support_C) / (1 - confidence)
-    #
+
     #print("Support: " , support_AC)
     #print("Confidence: " , confidence)
     #print("Lift: " ,lift)
-    print("Leverage: " , leverage)
-    #print("Conviction : " , conviction)
+    #print("Leverage: " , leverage)
     print("=====================================")

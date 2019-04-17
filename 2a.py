@@ -98,6 +98,7 @@ def treat_missing_categorical(df,columns,how = 'mode'):
         print("Missing value fill cannot be completed")
         return df
 treat_missing_numeric(df,non_cat,how = 'mean')
+#treat_missing_numeric(df,non_cat,how = 'median')
 treat_missing_categorical(df,cat,how = 'mode')
 
 X = df.copy()
