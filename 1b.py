@@ -104,14 +104,13 @@ def treat_missing_categorical(df,columns,how = 'mode'):
 treat_missing_numeric(df,non_cat,how = 'mean')
 treat_missing_categorical(df,cat,how = 'mode')
 
-#Create a DataFrame
-#df = pd.DataFrame(d)
 print df.describe()
 l= df['Product_ID']
-
-print "\nMedian:\n"
 print(df.head())
+print "\nMedian:\n"
 print df.median()
+print "\nMode:\n"
+print df.mode()
 print ()
 
 f = df['Age'].value_counts()

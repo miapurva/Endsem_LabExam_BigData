@@ -1,9 +1,6 @@
 from sklearn import metrics
 from collections import Counter
 from scipy.spatial.distance import pdist,squareform
-
-# Any results you write to the current directory are saved as output.
-
 import numpy as np  
 import matplotlib.pyplot as plt  
 import pandas as pd  
@@ -15,7 +12,6 @@ store_data = pd.read_csv('patterns_BlackFriday.csv')
 records = []  
 for i in range(199):  
     records.append([str(store_data.values[i,j]) for j in range(8)])
-
 
 association_rules = apriori(records, min_support=0.029, min_lift=2, min_length=3)  
 association_results = list(association_rules) 
