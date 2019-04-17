@@ -8,5 +8,5 @@
 
 5. [x] Mine intersting patterns about each product id maintained by the organization.
 
-6. [ ] Develop a parallelized application using Map Reduce framework to check if a input matrix is symmetric 		or not( transpose of the matrix is equal to itself).
+6. [x] Develop a parallelized application using Map Reduce framework to check if a input matrix is symmetric 		or not( transpose of the matrix is equal to itself).
 
